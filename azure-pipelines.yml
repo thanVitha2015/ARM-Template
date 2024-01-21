@@ -16,4 +16,7 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
-      Write-Host "Demo PowerShell Hello World"
+      Write-Host "Demo PowerShell Pipeline in AzureDevOps"
+- task: PowerShell@2
+  inputs:
+    filePath: 'Hello-world.ps1'
