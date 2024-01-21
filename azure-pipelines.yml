@@ -26,6 +26,6 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'Chapter 11 - Azure DevOps - PowerShell Script.ps'
+    filePath: 'Chapter 11 - Azure DevOps - PowerShell Script.ps1'
     arguments: "-number1 $(num1) -number2 $(num2)"
     
