@@ -15,16 +15,19 @@ variables:
 
 steps:
 - task: PowerShell@2
+- displayName: 'Inline PowerShell Call'
   inputs:
     targetType: 'inline'
     script: |
       # Write your PowerShell commands here.
       Write-Host "PowerShell in AzureDevOps Pipeline"
 - task: PowerShell@2
+- displayName: 'Filepath PowerShell call'
   inputs:
     filePath: 'Hello-world.ps1'
 
 - task: PowerShell@2
+- displayName: 'Pass Arugments to PowerShell File '
   inputs:
     filePath: 'Chapter 11 - Azure DevOps - PowerShell Script.ps1'
     arguments: "-number1 $(num1) -number2 $(num2)"
